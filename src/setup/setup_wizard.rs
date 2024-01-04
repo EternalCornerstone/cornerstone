@@ -1,5 +1,7 @@
 use std::{io::{self, Write}, fs::File};
 
+use crate::setup::config_setup;
+
 pub fn run_wizard() -> io::Result<()> {
     let mut input = String::new();
     println!("Welcome to the Cornerstone Setup Wizard!");
@@ -24,6 +26,12 @@ pub fn run_wizard() -> io::Result<()> {
 
     println!("Configuration saved to config.toml");
 
+    
     println!("Setup complete! Auth enabled: {}, Database enabled: {}", auth_enabled, database_enabled);
+
+    println!("Applying the configuration to the application.");
+
+    config_setup::run_configuration_setup()?;
+
     Ok(())
 }

@@ -1,17 +1,15 @@
 use std::io;
 use std::fs;
 use std::io::Write;
-use std::thread::sleep;
-use std::time::Duration;
 
-mod setup_wizard;
+pub mod setup_wizard;
 mod config_setup;
 
 pub fn setup_check() -> io::Result<()> {
     // Check if the config file exists
     if !fs::metadata("config.toml").is_ok() {
         println!("It seems that you are trying to run the project without having a config.toml file, lets fix this!");
-        println!("For context, the config.toml will tell the application which services you require within your project.");
+        println!("For context, the config.toml will tell the application which package you would like to use within your project.");
         println!("Note that there are mandatory packages to allow for core functionality.");
         // The config file doesn't exist, so run the setup wizard
         if std::env::args().any(|arg| arg == "--setup-wizard") {
