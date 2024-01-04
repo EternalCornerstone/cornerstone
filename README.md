@@ -41,7 +41,9 @@ Check out our [GitHub repository](#https://github.com/DanielOwenRaine/cornerston
 - Trunk Based Development Structure.
 - Continuous Integration.
 - Continuous Delivery.
-
+- Continuous Documentation.
+- Continuous Testing.
+  
 - HTTP with API
 - Authentication for login/registration, Authorization based on user roles for permissive routing.
 - Services
