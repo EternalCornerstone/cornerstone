@@ -36,26 +36,26 @@ Check out our [GitHub repository](#), dive into the documentation, and start con
 
 ## Overarching Ideas for Implementaion (Feel free to make your own idea implementations as i'm sure I have missed something) - 04/01/2024 (DD/MM/YY)
 
-- **HTTP with API
-- **Authentication for login/registration, Authorization based on user roles for permissive routing.
-- **Email server for interaction with users outside of the application: email verification, email marketing.
-- **Database with tables for Users, Email, Files, Products.
-- **CMS Integration for DB tables.
-- **Product Management
-- **Trunk Based Development.
-- **Continuous Integration.
-- **Continuous Delivery.
-- **Optimizations.
-- **Analytics
-- **Payment Processing
-- **Responsive UI, advanced html library for interacting with services.
-- **Markdown Templating For Emails and blogs.
-- **Markdown Editor to write unique blogs and emails.
-- **File Upload system for site owners to upload content.
-- **Content System for users to view content
-- -** videos
-- -** blogs
-- -** gallary
-- -** documents
+- HTTP with API
+- Authentication for login/registration, Authorization based on user roles for permissive routing.
+- Email server for interaction with users outside of the application: email verification, email marketing.
+- Database with tables for Users, Email, Files, Products.
+- CMS Integration for DB tables.
+- Product Management
+- Trunk Based Development.
+- Continuous Integration.
+- Continuous Delivery.
+- Optimizations.
+- Analytics
+- Payment Processing
+- esponsive UI, advanced html library for interacting with services.
+- Markdown Templating For Emails and blogs.
+- Markdown Editor to write unique blogs and emails.
+- File Upload system for site owners to upload content.
+- Content System for users to view content
+   - videos
+   -  blogs
+   -  gallary
+   -  documents
 
 TBC..
