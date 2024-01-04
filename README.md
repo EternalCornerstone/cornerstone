@@ -33,3 +33,7 @@ We're excited to collaborate with developers, designers, and anyone passionate a
 Your contribution can help turn Cornerstone into a pivotal tool for application development. Let's build something powerful, efficient, and exemplary for open-source collaboration.
 
 Check out our [GitHub repository](#), dive into the documentation, and start contributing today!
+
+## Todo List! (04/01/2024) (DD/MM/YY)
+
+...
