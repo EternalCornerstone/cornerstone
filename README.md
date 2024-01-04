@@ -48,7 +48,7 @@ Check out our [GitHub repository](#), dive into the documentation, and start con
 - Optimizations.
 - Analytics
 - Payment Processing
-- esponsive UI, advanced html library for interacting with services.
+- Responsive UI, advanced html library for interacting with services.
 - Markdown Templating For Emails and blogs.
 - Markdown Editor to write unique blogs and emails.
 - File Upload system for site owners to upload content.
