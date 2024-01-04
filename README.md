@@ -41,24 +41,41 @@ Check out our [GitHub repository](#https://github.com/DanielOwenRaine/cornerston
 - Trunk Based Development Structure.
 - Continuous Integration.
 - Continuous Delivery.
-  
+
 - HTTP with API
 - Authentication for login/registration, Authorization based on user roles for permissive routing.
-- Email server for interaction with users outside of the application: email verification, email marketing.
+- Services
+- Utilities
+- Analytics
+- Security
+
 - Database with tables for Users, Email, Files, Products.
 - CMS Integration for DB tables.
 - Product Management
-- Optimizations.
-- Analytics
-- Payment Processing
-- Responsive UI, advanced html library for interacting with services.
+  
+- File Upload system for site owners to upload content.
+
+- Email server for interaction with users outside of the application: email verification, email marketing.
 - Markdown Templating For Emails and blogs.
 - Markdown Editor to write unique blogs and emails.
-- File Upload system for site owners to upload content.
-- Content System for users to view content
+
+- Payment Processing
+- Cryptocurrency Payment Processing
+- Multitude of payment providers
+
+- Responsive UI, advanced html library for interacting with services. Real time page updates based on content changes.
+- Content view for users to view content
    - videos
    - blogs
    - gallary
    - documents
-- 
-TBC..
+     
+- Scheduling Tasks
+  
+- Discounts for products / services.
+
+- Web scraper
+  
+- Optimizations.
+
+MOOOOOOOOOOOORE!
