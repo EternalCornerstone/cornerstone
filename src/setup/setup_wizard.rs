@@ -18,7 +18,7 @@ pub fn run_wizard() -> io::Result<()> {
     let database_enabled = input.trim().eq_ignore_ascii_case("y");
 
     // Create and write to the config file
-    let mut config_file = File::create("config.toml")?;
+    let mut config_file = File::create("./config.toml")?;
     writeln!(config_file, "auth_enabled = {}", auth_enabled)?;
     writeln!(config_file, "database_enabled = {}", database_enabled)?;
 
