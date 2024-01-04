@@ -34,7 +34,7 @@ We're excited to collaborate with developers, designers, and anyone passionate a
 
 Your contribution can help turn Cornerstone into a pivotal tool for application development. Let's build something powerful, efficient, and exemplary for open-source collaboration.
 
-Check out our [GitHub repository](#), dive into the documentation, and start contributing today!
+Check out our [GitHub repository](#https://github.com/DanielOwenRaine/cornerstone/tree/main), dive into the documentation, and start contributing today!
 
 ## Overarching Ideas for Implementaion (This is an idea dump so that there is a clear direction in case everything gets built :D) - 04/01/2024 (DD/MM/YY)
 
