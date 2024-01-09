@@ -1,0 +1,10 @@
+pub mod about;
+pub mod contact;
+pub mod files;
+pub mod index;
+pub mod login;
+pub mod profile;
+pub mod products;
+pub mod register;
+pub mod content_management;
+pub mod forgotten_password;
