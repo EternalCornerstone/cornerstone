@@ -4,11 +4,24 @@ version = "0.1.0"
 edition = "2021"
 
 [features]
+
 default = []
 auth = []
 database = []
 payment = []
+products = []
+services = []
+content = []
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# make each service have its own dependencies.
+
+# requires api, auth, database, server but can work with any config.
 
 [dependencies]
+actix = "0.13.1"
+actix-files = "0.6.4"
+actix-multipart = "0.6.1"
+actix-web = "4.4.1"
+futures-util = "0.3.30"
+sanitize-filename = "0.5.0"
+uuid = { version = "1", features = ["v4"] }

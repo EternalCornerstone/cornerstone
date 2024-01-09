@@ -1,2 +1,2 @@
-auth_enabled = true
-database_enabled = true
+server = "Actix"
+database = "PostgreSQL"
