@@ -1,2 +1,2 @@
-server = "Actix"
+server = "Cornerstone"
 database = "PostgreSQL"

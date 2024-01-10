@@ -5,7 +5,7 @@ pub fn return_template(page: String) -> String {
     // let nav_html = navigation_bar(true, false); // User is logged in, but not an admin.
     // let nav_html = navigation_bar(false, false); // User is not logged in, obviously cannot be admin.
     let html: String = format!("<html  >
-            <head><title>Core Server</title></head>
+            <head><title>Cornerstone Server</title></head>
             <body>
                 {}
                 <h1>Welcome To The Website.</h1>

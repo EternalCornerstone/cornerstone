@@ -1,6 +1,7 @@
 use std::{io::{self, Write, Error}, fs::{File, self}};
 
 use database::Database;
+use error::AppError;
 use server::Server;
 
 pub mod api;
@@ -11,6 +12,7 @@ pub mod payment;
 pub mod security;
 pub mod products;
 pub mod ui;
+pub mod error;
 
 pub fn run_wizard() -> io::Result<()> {
     Server::give_users_server_options();    
@@ -116,6 +118,16 @@ impl Configuration {
     }
 
 }
-pub fn start_application_with_configuration(configuration: Configuration) {
-    println!("{:?}", configuration);
+pub async fn start_application_with_configuration(configuration: Configuration) -> Result<(), AppError> {
+    println!("starting the application with the configuration of: {:?}", configuration);
+    match Server::start_server(configuration.server).await {
+        Ok(ok) => {
+            println!("starting server: {:?}", ok);
+            Ok(())
+        },
+        Err(err) => {
+            Err(err)
+
+        },
+    }
 }

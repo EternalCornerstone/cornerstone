@@ -1,12 +1,41 @@
-// pub mod actix;
-// pub mod cornerstone;
+use crate::{error::AppError, api::{Api, APIRoute}};
+pub mod cornerstone;
+pub mod actix;
 #[derive(Debug)]
 pub enum Server {
     Actix,
     Cornerstone,
     Nothing
 }
+pub trait RouteConfigurator {
+    fn new() -> Self;
+    fn add_route(&mut self, api: &Api);
+    fn run(self);    
+}
+
 impl Server {
+    pub async fn start_server(server: Server) -> Result<(), AppError>  {
+        println!("starting server: {} {} {:?}", server.as_str(), server.as_command(), server);
+        let api: Vec<APIRoute> = Api::new().await;
+        match server {
+            Server::Actix => {
+                actix::ActixServer::new("127.0.0.1:8080", api).await.map_err(|e| e.into())
+            },
+            Server::Cornerstone => {
+                println!("Starting the Cornerstone system :)");
+                let mut corner: cornerstone::CornerstoneServer = cornerstone::CornerstoneServer::new("127.0.0.1:8080").unwrap();
+                for route in api {
+                    corner.add_route(route);
+                }
+                corner.run().await.map_err(|e| e.into())
+            },
+            Server::Nothing => {
+                println!("Implement your own check out the code to see how to interface it into your own server :).");
+                Ok(())
+            },
+        }
+    }
+
     pub fn get_config(input: &str) -> &'static str {
         let trimmed = input.trim();
         match trimmed {
@@ -50,4 +79,6 @@ impl Server {
         }
         println!("{}", options);
     }
+    // Existing methods...
+
 }
